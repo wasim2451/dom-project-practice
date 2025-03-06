@@ -9,9 +9,9 @@ function time() {
     // console.log(seconds);
     const ampm = hours > 12 ? 'PM' : 'AM';
     //  console.log(ampm);
-  
+    const time = date.toLocaleTimeString();
     const clock = (document.getElementById('clock').textContent = `
-    ${hours}:${minutes}:${seconds} ${ampm}
+    ${time}
     `);
   }
   
